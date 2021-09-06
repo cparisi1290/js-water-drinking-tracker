@@ -86,3 +86,14 @@ h3 {
 .remained small {
   font-size: 12px;
 }
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 0px;
+  transition: 0.3s ease;
+}
