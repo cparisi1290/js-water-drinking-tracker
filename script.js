@@ -36,5 +36,14 @@ function updateBigCup() {
   const fullCups = document.querySelectorAll('.cup-small.full').length;
   const totalCups = smallCups.length;
   // console.log(fullCups);
-  console.log(totalCups);
+  // console.log(totalCups);
+
+  if (fullCups === 0) {
+    percentage.style.visibility = 'hidden';
+    percentage.style.height = 0;
+  } else {
+    percentage.style.visibility = 'visible';
+    percentage.style.height = `${(fullCups / totalCups) * 330}px`;
+    percentage.innerHTML = `${(fullCups / totalCups) * 100}%`;
+  }
 }
