@@ -14,7 +14,7 @@ function highlightCups(idx) {
 
   if (
     smallCups[idx].classList.contains('full') &&
-    !smallCups[idx].nextElementSibling.contains('full')
+    !smallCups[idx].nextElementSibling.classList.contains('full')
   ) {
     idx--;
   }
